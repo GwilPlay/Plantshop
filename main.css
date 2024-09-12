@@ -1,0 +1,295 @@
+@font-face {
+  font-family: Montserat;
+  src: url(./Montserrat-Bold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Montserat;
+  src: url(./Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserat;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  padding-top: 40px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header__elems {
+  display: flex;
+  align-items: center;
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+.header__btns {
+  align-items: center;
+}
+.header__search {
+  margin-right: 40px;
+}
+
+.btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #156963;
+  padding: 8px 33px;
+}
+.btn_w {
+  color: #156963;
+  background-color: #fff;
+}
+
+.main__wrap {
+  display: flex;
+  gap: 77px;
+  align-items: end;
+}
+.main__texts {
+  max-width: 523px;
+}
+.main__title {
+  color: #156963;
+  font-size: 68px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.main__text {
+  color: #2C1500;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 110px;
+  line-height: 1.5;
+}
+.main__btns {
+  display: flex;
+}
+.main__btn {
+  width: 320px;
+  padding: 40px 50px;
+}
+.main__btn-subtitle {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  margin-bottom: 12px;
+}
+.main__btn-subtitle_p::before {
+  content: "";
+  display: block;
+  background: url(./arrow.svg);
+  width: 32px;
+  height: 32px;
+  margin-right: 9px;
+}
+.main__btn-subtitle_n::after {
+  content: "";
+  display: block;
+  background: url(./arrow.svg);
+  width: 32px;
+  height: 32px;
+  margin-left: 9px;
+  transform: rotate(180deg);
+}
+.main__btn-text {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+}
+.main__btn-text_g {
+  color: #156963;
+}
+
+.btn_w {
+  padding: 40px 30px;
+}
+
+.adventages {
+  padding: 142px 0;
+}
+.adventages__row {
+  display: flex;
+  gap: 32px;
+}
+.adventages__card {
+  padding: 16px 20px;
+  border: 2px solid #E0E0E0;
+}
+.adventages__block {
+  display: flex;
+  gap: 19px;
+  margin-bottom: 16px;
+}
+.adventages__title {
+  color: #156963;
+  font-weight: 800;
+  font-size: 16px;
+  max-width: 108px;
+}
+
+.plants__texts {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.plants__title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+.plants__btn {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #E0E0E0;
+  padding: 8px 12px;
+}
+.plants__btn::after {
+  content: url(./arrow-down.svg);
+}
+.plants__row {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.plants__plant {
+  margin-bottom: 16px;
+}
+.plants__subtitle {
+  text-align: center;
+}
+.plants__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+.plants__price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.relaxed__wrap {
+  margin-bottom: 80px;
+}
+.relaxed__texts {
+  width: 522px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+.relaxed__title {
+  font-size: 40px;
+  font-weight: 800;
+}
+.relaxed__text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  line-height: 23px;
+}
+.relaxed__photo {
+  float: left;
+  margin-top: 114px;
+}
+.relaxed__img {
+  float: right;
+  margin-bottom: 80px;
+}
+
+.shop__wrap {
+  width: 100%;
+  background-color: #F3F4F6;
+  margin-top: 800px;
+  display: flex;
+  margin-bottom: 71px;
+}
+.shop__title {
+  padding: 88px 0px 88px 97px;
+}
+.shop__subtitle {
+  font-size: 40px;
+  color: #2C1500;
+}
+.shop__btn {
+  color: #FAFEFE;
+  padding: 10px 42px;
+  background-color: #156963;
+  border: 0;
+  margin-top: 44px;
+}
+.shop__img {
+  display: flex;
+}
+
+.footer__texts {
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+.footer__text2 {
+  margin-left: 80px;
+}
+.footer__line {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.footer__logo {
+  color: #156963;
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer__House {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer__Laksda {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.footer__subtitle {
+  margin-top: 14px;
+}
+.footer__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.footer__btn {
+  background-color: #156963;
+  color: #fff;
+  font-weight: 500;
+  font-size: 8px;
+  border: #156963;
+  border-radius: 2px;
+  margin-top: 14px;
+  padding: 8px 12px;
+}/*# sourceMappingURL=main.css.map */

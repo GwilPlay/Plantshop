@@ -1,0 +1,308 @@
+@font-face {
+    font-family: Montserat;
+    src: url(./Montserrat-Bold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Montserat;
+    src: url(./Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Montserat;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1168px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    padding-top: 40px;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__elems{
+        display: flex;
+        align-items: center;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+    }
+    &__btns{
+        align-items: center;
+    }
+    &__search{
+        margin-right: 40px;
+    }
+}
+
+.btn{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #156963;
+    padding: 8px 33px;
+    &_w{
+        color: #156963;
+        background-color: #fff;
+    }
+}
+
+.main{
+    &__wrap{
+        display: flex;
+        gap: 77px;
+        align-items: end;
+    }
+    &__texts{
+        max-width: 523px;
+    }
+    &__title{
+        color: #156963;
+        font-size: 68px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+    &__text{
+        color: #2C1500;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 110px;
+        line-height: 1.5;
+    }
+    &__btns{
+        display: flex;
+    }
+    &__btn{
+        width: 320px;
+        padding: 40px 50px;
+        &-subtitle{
+            color: #333333;
+            font-size: 24px;
+            font-weight: 500;
+            display: flex;
+            margin-bottom: 12px;
+            &_p::before{
+                content: '';
+                display: block;
+                background: url(./arrow.svg);
+                width: 32px;
+                height: 32px;
+                margin-right: 9px;
+            }
+            &_n::after{
+                content: '';
+                display: block;
+                background: url(./arrow.svg);
+                width: 32px;
+                height: 32px;
+                margin-left: 9px;
+                transform: rotate(180deg);
+            }
+        }
+        &-text{
+            color: #fff;
+            font-size: 32px;
+            font-weight: 500;
+            &_g{
+                color: #156963;
+            }
+        }
+    }   
+}
+
+.btn_w{
+    padding: 40px 30px;
+}
+
+.adventages{
+    padding: 142px 0;
+    &__row{
+        display: flex;
+        gap: 32px;
+    }
+    &__card{
+        padding: 16px 20px;
+        border: 2px solid #E0E0E0;
+    }
+    &__block{
+        display: flex;
+        gap: 19px;
+        margin-bottom: 16px;
+    }
+    &__title{
+        color: #156963;
+        font-weight: 800;
+        font-size: 16px;
+        max-width: 108px;
+    }
+}
+
+.plants{
+    &__texts{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    &__title{
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &__btn{
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+        border: 1px solid #E0E0E0;
+        padding: 8px 12px;
+        &::after{
+            content: url(./arrow-down.svg);
+        }
+    }
+    &__row{
+        display: flex;
+        margin-top: 24px;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    &__plant{
+        margin-bottom: 16px;
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__price{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.relaxed{
+    &__wrap{
+        margin-bottom: 80px;
+    }
+    &__texts{
+        width: 522px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    &__title{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 16px;
+        line-height: 23px;
+    }
+    &__photo{ 
+        float: left;
+        margin-top: 114px;
+    }
+    &__img{
+        float: right;
+        margin-bottom: 80px;
+    }
+}
+
+.shop{
+    &__wrap{
+        width: 100%;
+        background-color: #F3F4F6;
+        margin-top: 800px;
+        display: flex;
+        margin-bottom: 71px;
+    }
+    &__title{
+        padding: 88px 0px 88px 97px;
+    }
+    
+    &__subtitle{
+        font-size: 40px;
+        color: #2C1500;
+    }
+    &__btn{
+        color: #FAFEFE;
+        padding: 10px 42px;
+        background-color: #156963;
+        border: 0;
+        margin-top: 44px;
+    }
+    &__img{
+        display: flex;
+    }
+}
+
+.footer{
+    &__texts {
+        display: flex;
+        margin-left: 80px;
+        margin-bottom: 50px;
+    }
+    &__text2 {
+        margin-left: 80px;
+    }
+    &__line{
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    &__logo{
+        color: #156963;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__House{
+        margin-top: 24px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__Laksda{
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    &__subtitle{
+        margin-top: 14px;
+    }
+    &__title{
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+    &__btn{
+        background-color: #156963;
+        color: #fff;
+        font-weight: 500;
+        font-size: 8px;
+        border: #156963;
+        border-radius: 2px;
+        margin-top: 14px; 
+        padding: 8px 12px;
+    }    
+}
